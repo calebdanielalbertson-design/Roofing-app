@@ -1,0 +1,16 @@
+{
+    "name": "@repo/calc",
+    "version": "0.0.0",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "lint": "eslint .",
+        "check-types": "tsc --noEmit",
+        "test": "vitest"
+    },
+    "devDependencies": {
+        "typescript": "^5.7.2",
+        "vitest": "^1.2.1"
+    }
+}
