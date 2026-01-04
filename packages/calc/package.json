@@ -11,6 +11,9 @@
     },
     "devDependencies": {
         "typescript": "^5.7.2",
-        "vitest": "^1.2.1"
+        "vitest": "^4.0.16"
+    },
+    "dependencies": {
+        "@nestjs/platform-express": "^10.0.0"
     }
 }
