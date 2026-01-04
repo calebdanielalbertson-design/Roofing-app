@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,7 +9,12 @@
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
   }
- 
+
+  body {
+    font-family: 'Inter', sans-serif;
+    @apply bg-gray-50 text-slate-900;
+  }
+
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
