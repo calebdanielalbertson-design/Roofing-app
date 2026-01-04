@@ -14,6 +14,14 @@
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",
+    "paths": {
+      "@repo/calc": [
+        "../../packages/calc/src/index.ts"
+      ],
+      "@repo/types": [
+        "../../packages/types/src/index.ts"
+      ]
+    },
     "incremental": true,
     "skipLibCheck": true,
     "strictNullChecks": true,
