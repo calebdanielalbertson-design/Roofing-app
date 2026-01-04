@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { api } from '../../lib/api';
 import type { Job, Estimate, LineItemCatalog } from '../../types';
-import { useQuery } from '@tanstack/react-query';
+
 import { Plus, Trash2, Calculator, FileText } from 'lucide-react';
-import { cn } from '../../lib/utils';
+
 
 export function EstimateTab({ job }: { job: Job }) {
     const [estimate, setEstimate] = useState<Estimate | null>(null);
