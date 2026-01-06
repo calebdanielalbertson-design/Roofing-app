@@ -1,0 +1,46 @@
+# Dependencies
+node_modules
+**/node_modules
+
+# Build outputs
+dist
+**/dist
+
+# Git
+.git
+.gitignore
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Test files
+**/*.spec.ts
+**/*.test.ts
+**/test
+**/tests
+coverage
+
+# Web app (not needed for API deployment)
+apps/web
+
+# Documentation
+*.md
+!README.md
+
+# Environment files (Railway injects these)
+.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Turbo cache
+.turbo
