@@ -31,6 +31,8 @@ RUN cd apps/api && npx prisma generate
 
 # Build the API
 RUN npm run build --workspace=@repo/api
+RUN ls -R apps/api/dist || echo "Dist not found in apps/api/dist"
+RUN ls -R dist || echo "Dist not found in root"
 
 # ================================
 # Stage 2: Production Stage
