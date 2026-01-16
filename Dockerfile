@@ -68,5 +68,4 @@ WORKDIR /app/apps/api
 # Expose the port (Railway injects PORT env var)
 EXPOSE 3000
 
-# Run Prisma migrations and start the server
-CMD ["sh", "-c", "npx prisma migrate deploy && node dist/main"]
+CMD ["sh", "-c", "npx prisma migrate deploy && node dist/apps/api/src/main"]
