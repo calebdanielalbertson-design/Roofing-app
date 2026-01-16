@@ -92,13 +92,13 @@ export class EstimatesService {
 
     const context: PricingContext = {
       materialPrices: Object.fromEntries(
-        materialSkus.map(m => [m.skuCode, { price: Number(m.purchasePackagePrice), unitsPerPack: Number(m.unitsPerPackage) }])
+        materialSkus.map((m: any) => [m.skuCode, { price: Number(m.purchasePackagePrice), unitsPerPack: Number(m.unitsPerPackage) }])
       ),
       laborRates: Object.fromEntries(
-        laborRoles.map(l => [l.code, Number(l.hourlyRate)])
+        laborRoles.map((l: any) => [l.code, Number(l.hourlyRate)])
       ),
       equipmentRates: Object.fromEntries(
-        equipmentRates.map(e => [e.code, Number(e.rate)])
+        equipmentRates.map((e: any) => [e.code, Number(e.rate)])
       )
     };
 

@@ -31,8 +31,7 @@ RUN cd apps/api && npx prisma generate
 
 # Build the API
 RUN npm run build --workspace=@repo/api
-RUN ls -R apps/api/dist || echo "Dist not found in apps/api/dist"
-RUN ls -R dist || echo "Dist not found in root"
+
 
 # ================================
 # Stage 2: Production Stage
@@ -70,4 +69,4 @@ WORKDIR /app/apps/api
 EXPOSE 3000
 
 # Run Prisma migrations and start the server
-CMD ["sh", "-c", "ls -R /app/apps/api && npx prisma migrate deploy && node dist/main"]
+CMD ["sh", "-c", "npx prisma migrate deploy && node dist/main"]
